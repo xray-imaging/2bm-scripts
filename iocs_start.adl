@@ -100,7 +100,7 @@ display {
 	}
 	clr=0
 	bclr=49
-	label="Detector IOC"
+	label="-Detector IOC"
 }
 "shell command" {
 	object {
@@ -115,7 +115,7 @@ display {
 	}
 	clr=0
 	bclr=49
-	label="TomoScanStream IOC"
+	label="-TomoScanStream IOC"
 }
 "shell command" {
 	object {
@@ -130,7 +130,7 @@ display {
 	}
 	clr=0
 	bclr=49
-	label="TomoScan IOC"
+	label="-TomoScan IOC"
 }
 "shell command" {
 	object {
@@ -145,7 +145,7 @@ display {
 	}
 	clr=0
 	bclr=49
-	label="TomoScanStream server"
+	label="-TomoScanStream server"
 }
 "shell command" {
 	object {
@@ -160,7 +160,7 @@ display {
 	}
 	clr=0
 	bclr=49
-	label="TomoScan server"
+	label="-TomoScan server"
 }
 "shell command" {
 	object {
@@ -175,7 +175,7 @@ display {
 	}
 	clr=0
 	bclr=49
-	label="TomoStream IOC"
+	label="-TomoStream IOC"
 }
 "shell command" {
 	object {
@@ -190,7 +190,7 @@ display {
 	}
 	clr=0
 	bclr=49
-	label="TomoStream server"
+	label="-TomoStream server"
 }
 "shell command" {
 	object {
@@ -205,7 +205,7 @@ display {
 	}
 	clr=0
 	bclr=49
-	label="mctOptics IOC"
+	label="-mctOptics IOC"
 }
 "shell command" {
 	object {
@@ -220,7 +220,7 @@ display {
 	}
 	clr=0
 	bclr=49
-	label="mctOptics server"
+	label="-mctOptics server"
 }
 "text update" {
 	object {
