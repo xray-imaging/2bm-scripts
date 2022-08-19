@@ -1,14 +1,14 @@
 
 file {
-	name="/home/beams8/USER2BMB/scripts/iocs_start.adl"
+	name="/home/beams/USER2BMB/scripts/iocs_start.adl"
 	version=030111
 }
 display {
 	object {
-		x=2189
-		y=292
+		x=939
+		y=577
 		width=665
-		height=325
+		height=370
 	}
 	clr=14
 	bclr=4
@@ -96,16 +96,16 @@ display {
 	}
 	command[0] {
 		label="Restart detector"
-		name="bash /home/beams/USER2BMB/scripts/detector_IOC.sh"
+		name="bash /home/beams/USER2BMB/scripts/detector_IOC_oryx_5mp.sh"
 	}
 	clr=0
 	bclr=49
-	label="-Detector IOC"
+	label="-Detector Oryx 5MP IOC"
 }
 "shell command" {
 	object {
 		x=10
-		y=185
+		y=220
 		width=240
 		height=30
 	}
@@ -120,7 +120,7 @@ display {
 "shell command" {
 	object {
 		x=10
-		y=115
+		y=150
 		width=240
 		height=30
 	}
@@ -135,7 +135,7 @@ display {
 "shell command" {
 	object {
 		x=10
-		y=220
+		y=255
 		width=240
 		height=30
 	}
@@ -150,7 +150,7 @@ display {
 "shell command" {
 	object {
 		x=10
-		y=150
+		y=185
 		width=240
 		height=30
 	}
@@ -165,7 +165,7 @@ display {
 "shell command" {
 	object {
 		x=10
-		y=255
+		y=290
 		width=240
 		height=30
 	}
@@ -180,7 +180,7 @@ display {
 "shell command" {
 	object {
 		x=10
-		y=290
+		y=325
 		width=240
 		height=30
 	}
@@ -195,7 +195,7 @@ display {
 "shell command" {
 	object {
 		x=10
-		y=45
+		y=80
 		width=240
 		height=30
 	}
@@ -210,7 +210,7 @@ display {
 "shell command" {
 	object {
 		x=10
-		y=80
+		y=115
 		width=240
 		height=30
 	}
@@ -240,7 +240,7 @@ display {
 "text update" {
 	object {
 		x=260
-		y=50
+		y=85
 		width=400
 		height=20
 	}
@@ -256,7 +256,7 @@ display {
 "text update" {
 	object {
 		x=260
-		y=85
+		y=120
 		width=100
 		height=20
 	}
@@ -273,7 +273,7 @@ display {
 "text update" {
 	object {
 		x=260
-		y=155
+		y=190
 		width=100
 		height=20
 	}
@@ -290,7 +290,7 @@ display {
 "text update" {
 	object {
 		x=260
-		y=120
+		y=155
 		width=400
 		height=20
 	}
@@ -306,7 +306,7 @@ display {
 "text update" {
 	object {
 		x=260
-		y=190
+		y=225
 		width=400
 		height=20
 	}
@@ -322,7 +322,7 @@ display {
 "text update" {
 	object {
 		x=260
-		y=225
+		y=260
 		width=100
 		height=20
 	}
@@ -339,7 +339,7 @@ display {
 "text update" {
 	object {
 		x=260
-		y=260
+		y=295
 		width=400
 		height=20
 	}
@@ -355,7 +355,7 @@ display {
 "text update" {
 	object {
 		x=260
-		y=295
+		y=330
 		width=100
 		height=20
 	}
@@ -366,6 +366,36 @@ display {
 	}
 	clrmod="alarm"
 	format="string"
+	limits {
+	}
+}
+"shell command" {
+	object {
+		x=10
+		y=45
+		width=240
+		height=30
+	}
+	command[0] {
+		label="Restart detector"
+		name="bash /home/beams/USER2BMB/scripts/detector_IOC_oryx_31mp.sh"
+	}
+	clr=0
+	bclr=49
+	label="-Detector Oryx 32MP IOC"
+}
+"text update" {
+	object {
+		x=260
+		y=50
+		width=151
+		height=20
+	}
+	monitor {
+		chan="2bmbSP1:cam1:DetectorState_RBV"
+		clr=15
+		bclr=4
+	}
 	limits {
 	}
 }
