@@ -1,6 +1,6 @@
 
 file {
-	name="/home/beams/USER2BMB/scripts/iocs_start.adl"
+	name="/home/beams8/USER2BMB/scripts/iocs_start.adl"
 	version=030111
 }
 display {
@@ -230,7 +230,7 @@ display {
 		height=20
 	}
 	monitor {
-		chan="2bmbSP2:cam1:DetectorState_RBV"
+		chan="2bmbSP1:cam1:DetectorState_RBV"
 		clr=15
 		bclr=4
 	}
@@ -392,7 +392,7 @@ display {
 		height=20
 	}
 	monitor {
-		chan="2bmbSP1:cam1:DetectorState_RBV"
+		chan="2bmbSP2:cam1:DetectorState_RBV"
 		clr=15
 		bclr=4
 	}
