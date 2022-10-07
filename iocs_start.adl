@@ -5,10 +5,10 @@ file {
 }
 display {
 	object {
-		x=939
-		y=577
+		x=928
+		y=338
 		width=665
-		height=370
+		height=430
 	}
 	clr=14
 	bclr=4
@@ -397,5 +397,80 @@ display {
 		bclr=4
 	}
 	limits {
+	}
+}
+"shell command" {
+	object {
+		x=10
+		y=360
+		width=240
+		height=30
+	}
+	command[0] {
+		label="2bmbS1"
+		name="bash /home/beams/USER2BMB/scripts/2bmS1_IOC.sh"
+	}
+	clr=0
+	bclr=49
+	label="-2bmbS1 IOC"
+}
+"shell command" {
+	object {
+		x=10
+		y=395
+		width=240
+		height=30
+	}
+	command[0] {
+		label="TomoScan"
+		name="bash /home/beams/USER2BMB/scripts/2bmbAERO_IOC.sh"
+	}
+	clr=0
+	bclr=49
+	label="-2bmbAERO IOC"
+}
+rectangle {
+	object {
+		x=260
+		y=367
+		width=90
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="2bmS1:m1"
+	}
+}
+rectangle {
+	object {
+		x=260
+		y=400
+		width=90
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="2bmbAERO:m1"
+	}
+}
+rectangle {
+	object {
+		x=260
+		y=367
+		width=90
+		height=20
+	}
+	"basic attribute" {
+		clr=15
+	}
+	"dynamic attribute" {
+		vis="if zero"
+		chan="2bmS1:m1"
 	}
 }
